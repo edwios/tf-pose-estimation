@@ -1,3 +1,37 @@
+# tf-pose-estimation-3d
+
+This repo added Z output from the Tensorflow version of 'Openpose' human pose estimation using Convolutional 3D Pose Estimation from a Single Image. The code for the 3D Pose Estimation was taken from *Lifting from the Deep* by Denis Tome', Chris Russell, Lourdes Agapito.
+
+Original Repo of *Lifting from the Deep* : 
+
+For details, see [README](./tf_pose/lifting/README.md) in the lifting code.
+
+## Installation
+
+It is recommended to perform the installation under a Python3 Virtual Environment. To do so, run:
+
+```
+python3 -m venv tf-pose-venv
+. tf-pose-venv/bin/activate
+```
+
+### Mac OSX
+To use tf-post-estimation-3d on the Mac OSX, you will need to install `swig`, to do so, run:
+
+```
+brew install swig
+```
+
+There is no installation necessary for using the Lifting from the Deep except to download the models. To do so, following the installation instructions of tf-pose-estimation below. When finished, run setup.sh:
+
+```
+bash setup.sh
+```
+### Docker
+
+Unfortunately, docker is not yet implemented with this feature.
+
+
 # tf-pose-estimation
 
 'Openpose', human pose estimation algorithm, have been implemented using Tensorflow. It also provides several variants that have some changes to the network structure for **real-time processing on the CPU or low-power embedded devices.**
